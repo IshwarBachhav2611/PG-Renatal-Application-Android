@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- ================= BOOKING STATUS COLORS ================= -->
+
+    <!-- Pending -->
+    <color name="status_pending_bg">#FFF3CD</color>
+    <color name="status_pending_text">#856404</color>
+
+    <!-- Accepted -->
+    <color name="status_accepted_bg">#E8F5E9</color>
+    <color name="status_accepted_text">#2E7D32</color>
+
+    <!-- Rejected -->
+    <color name="status_rejected_bg">#FDECEA</color>
+    <color name="status_rejected_text">#C62828</color>
+
+</resources>

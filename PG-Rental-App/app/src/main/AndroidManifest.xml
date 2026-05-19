@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.roombuddy.pgrentalapp"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
+
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PgRentalApp2">
+        <activity
+            android:name="com.roombuddy.pgrentalapp.ui.splash.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.roombuddy.pgrentalapp.ui.home.HomeActivity"/>
+        <activity android:name="com.roombuddy.pgrentalapp.ui.auth.RoleSelectionActivity"/>
+        <activity android:name="com.roombuddy.pgrentalapp.ui.booking.BookingStatusActivity"/>
+        <activity android:name="com.roombuddy.pgrentalapp.ui.owner.OwnerDashboardActivity"/>
+        <activity android:name="com.roombuddy.pgrentalapp.ui.student.UpdateProfileActivity" />
+        <activity android:name="com.roombuddy.pgrentalapp.ui.student.StudentProfileActivity"/>
+        <activity android:name="com.roombuddy.pgrentalapp.ui.student.MyBookingsActivity" />
+        <activity android:name="com.roombuddy.pgrentalapp.ui.owner.OwnerBookingActivity"/>
+        <activity android:name="com.roombuddy.pgrentalapp.ui.student.StudentDashboardActivity"/>
+        <activity android:name="com.roombuddy.pgrentalapp.ui.pg.PgDetailActivity" />
+        <activity android:name="com.roombuddy.pgrentalapp.ui.booking.BookPgActivity"/>
+        <activity android:name="com.roombuddy.pgrentalapp.ui.pg.RatePgActivity"/>
+        <activity android:name="com.roombuddy.pgrentalapp.MainActivity"/>
+        <activity android:name="com.roombuddy.pgrentalapp.ui.auth.UserLoginActivity"/>
+        <activity android:name="com.roombuddy.pgrentalapp.ui.auth.UserRegisterActivity"/>
+        <activity android:name="com.roombuddy.pgrentalapp.ui.auth.OwnerLoginActivity"/>
+        <activity android:name="com.roombuddy.pgrentalapp.ui.auth.OwnerRegisterActivity"/>
+        <activity android:name="com.roombuddy.pgrentalapp.ui.owner.AddPgActivity" />
+        <activity android:name="com.roombuddy.pgrentalapp.ui.owner.OwnerProfileActivity" />
+        <activity android:name="com.roombuddy.pgrentalapp.ui.owner.ManagePgActivity"/>
+        <activity android:name="com.roombuddy.pgrentalapp.ui.owner.EditOwnerProfileActivity" />
+        <activity android:name="com.roombuddy.pgrentalapp.ui.owner.UpdatePgActivity"/>
+        <activity android:name="com.roombuddy.pgrentalapp.ui.pg.ReviewListActivity" />
+        <activity android:name="com.roombuddy.pgrentalapp.ui.owner.OwnerAllPgsActivity"/>
+        <activity android:name="com.roombuddy.pgrentalapp.ui.map.NearestPgMapActivity" android:exported="false" />
+
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="YOUR_GOOGLE_MAPS_API_KEY"/>
+
+
+    </application>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+</manifest>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#F5F7FA">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Manage PG"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:textColor="#212529"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="Update or manage your PG details"
+                android:textSize="14sp"
+                android:textColor="#6C757D"
+                android:gravity="center"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                card_view:cardCornerRadius="16dp"
+                card_view:cardElevation="6dp"
+                card_view:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/btnAddPg"
+                        android:text="Add PG"
+                        android:textAllCaps="false"
+                        android:textSize="16sp"
+                        android:backgroundTint="#1976D2"
+                        android:textColor="#FFFFFF"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"/>
+
+                    <Button
+                        android:id="@+id/btnUpdatePg"
+                        android:text="Update PG Details"
+                        android:textAllCaps="false"
+                        android:textSize="16sp"
+                        android:layout_marginTop="12dp"
+                        android:backgroundTint="#1976D2"
+                        android:textColor="#FFFFFF"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"/>
+
+                    <Button
+                        android:id="@+id/btnDeletePg"
+                        android:text="Delete PG"
+                        android:textAllCaps="false"
+                        android:textSize="16sp"
+                        android:layout_marginTop="12dp"
+                        android:backgroundTint="#B71C1C"
+                        android:textColor="#FFFFFF"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

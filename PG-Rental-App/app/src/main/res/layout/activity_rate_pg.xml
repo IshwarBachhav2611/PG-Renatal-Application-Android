@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F7FA">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_gravity="center"
+        card_view:cardCornerRadius="16dp"
+        card_view:cardElevation="8dp"
+        card_view:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rate This PG"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#212529"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your feedback helps others"
+                android:textSize="14sp"
+                android:textColor="#6C757D"
+                android:layout_marginTop="4dp"/>
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                android:numStars="5"
+                android:stepSize="1.0"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:progressTint="#FBC02D"
+                android:secondaryProgressTint="#FBC02D"
+                android:indeterminateTint="#FBC02D"/>
+
+            <EditText
+                android:id="@+id/edtReview"
+                android:hint="Write your review"
+                android:minLines="3"
+                android:gravity="top"
+                android:padding="12dp"
+                android:layout_marginTop="16dp"
+                android:background="@android:drawable/edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/btnSubmitRating"
+                android:text="Submit Rating"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:layout_marginTop="24dp"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:backgroundTint="#1976D2"
+                android:textColor="#FFFFFF"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>
